@@ -1,0 +1,126 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Section */
+  .header {
+    background: linear-gradient(180deg, #0b0f2e 10%, #1b1f47 100%);
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #ffcb05;
+  }
+  
+  /* Main Content Section */
+  .main-content {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Settings Form */
+  .settings-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    border-color: #0b0f2e;
+    outline: none;
+  }
+  
+  .save-button {
+    background-color: #0b0f2e;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .save-button:hover {
+    background-color: #1b1f47;
+  }
+  
+  /* Feedback Section */
+  .feedback {
+    margin-top: 10px;
+    text-align: center;
+    color: #d9534f; /* Red color for feedback messages */
+  }
+  
+  /* Footer Section */
+  .footer {
+    background-color: #0b0f2e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+  }
+  
