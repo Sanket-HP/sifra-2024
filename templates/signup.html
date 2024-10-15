@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sifra - Signup</title>
+    <link href="/static/css/signup.css" rel="stylesheet">
+</head>
+<body class="signup">
+    <div class="signup__bg"></div>
+    <main class="signup__container">
+        <div class="signup__card">
+            <!-- Signup Title -->
+            <h2 class="signup__title">Sifra Signup</h2>
+
+            <!-- Social Media Signup with Logos -->
+            <div class="social-signup">
+                <a href="/signup/google" class="social-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="Google Logo" class="social-icon"> 
+                </a>
+                <a href="/signup/microsoft" class="social-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg" alt="Microsoft Logo" class="social-icon">
+                </a>
+                <a href="/signup/apple" class="social-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" class="social-icon">
+                </a>
+            </div>
+
+            <p class="text-center text-gray-500 signup-manual-text">or signup manually</p>
+
+            <!-- Manual Signup Form -->
+            <form action="/signup" method="post" class="signup__form">
+                <div class="signup__box">
+                    <input type="text" id="username" name="username" placeholder="Username" required class="signup__input">
+                </div>
+                <div class="signup__box">
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required class="signup__input">
+                </div>
+                <div class="signup__box">
+                    <input type="password" id="password" name="password" placeholder="Your password" required class="signup__input">
+                </div>
+                <button type="submit" class="signup__button">Signup</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sifra - Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="/static/css/dashboard.css"> <!-- Dashboard specific styles -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">Sifra</h1>
+            <nav class="navbar">
+                <a href="/">Home</a>
+                <a href="/templates/settings.html">Settings</a>
+                <a href="/templates/logout.html">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+        <section class="dashboard-intro">
+            <h2>Welcome, [User's Name]!</h2>
+            <p>Here's your dashboard overview.</p>
+        </section>
+
+        <section class="statistics">
+            <div class="stat-card">
+                <h3>User Statistics</h3>
+                <p>Total Users: <span id="total-users">100</span></p>
+                <p>Active Users: <span id="active-users">80</span></p>
+            </div>
+            <div class="stat-card">
+                <h3>Recent Activities</h3>
+                <ul>
+                    <li>User A logged in.</li>
+                    <li>User B updated their profile.</li>
+                    <li>User C signed up.</li>
+                </ul>
+            </div>
+            <div class="stat-card">
+                <h3>Alerts</h3>
+                <p>No new alerts.</p>
+            </div>
+        </section>
+
+        <section class="charts">
+            <h3>User Growth Over Time</h3>
+            <canvas id="userGrowthChart"></canvas>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Sifra. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

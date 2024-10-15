@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sifra - Settings</title>
+    <link rel="stylesheet" href="/static/css/settings.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">Sifra</h1>
+            <nav class="navbar">
+                <a href="/">Home</a>
+                <a href="/dashboard">Dashboard</a>
+                <a href="/logout">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h1>Settings</h1>
+        <form action="/settings" method="POST" class="settings-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Update your username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Update your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Change Password</label>
+                <input type="password" id="password" name="password" placeholder="New password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+            </div>
+
+            <button type="submit" class="save-button">Save Changes</button>
+            <div class="feedback"></div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Sifra. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

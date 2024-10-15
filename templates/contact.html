@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sifra - Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/contact.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="navbar-container">
+            <div class="logo">Sifra</div>
+            <nav class="navbar">
+                <a href="/templates/index.html">Home</a>
+                <a href="/templates/features.html">Features</a>
+                <a href="/templates/pricing.html">Pricing</a>
+                <a href="/templates/contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+        <div class="welcome-message">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you!</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Sifra. All rights reserved.</p>
+        <p><a href="/privacy-policy">Privacy Policy</a> | <a href="/contact">Contact Us</a></p>
+    </footer>
+
+</body>
+</html>
